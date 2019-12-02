@@ -1,0 +1,22 @@
+{
+  "name": "jsonserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node -r esm server/index.js",
+    "db": "json-server -w db.json -p 13000",
+    "tunnel": "ngrok http 13000",
+    "push": "ngrok http 3000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "expo-permissions": "^7.0.0",
+    "expo-server-sdk": "^3.4.0",
+    "express": "^4.17.1",
+    "json-server": "^0.15.1",
+    "ngrok": "^3.2.5"
+  }
+}
